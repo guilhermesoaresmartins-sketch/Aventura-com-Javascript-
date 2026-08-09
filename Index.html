@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ecos de Aether</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+        <header>
+            <p class="eyebrow">PROJETO INTERATIVO</p>
+            <h1>ECOS DE AETHER</h1>
+            <p class="subtitle">
+                Uma aventura onde cada escolha muda o destino.
+            </p>
+        </header>
+
+        <section class="status">
+            <div>
+                 Energia:
+                <span id="energia">100</span>%
+            </div>
+
+            <div>
+                 Inventário:
+                <span id="inventario">Vazio</span>
+            </div>
+        </section>
+
+        <section class="story">
+
+            <div class="scene">
+                <div class="stars"></div>
+                <div class="planet"></div>
+            </div>
+
+            <div class="content">
+
+                <p class="chapter" id="capitulo">
+                    CAPÍTULO 01
+                </p>
+
+                <h2 id="titulo">
+                    O despertar
+                </h2>
+
+                <p id="texto">
+                    Você abre os olhos.
+
+                    O chão metálico está gelado. Luzes vermelhas piscam
+                    no teto e uma sirene distante ecoa pelos corredores.
+
+                    Você não lembra quem é.
+
+                    Na sua frente existem três portas.
+
+                    Uma delas possui uma luz azul.
+                    Outra está completamente escura.
+                    A terceira parece ter sido arrombada.
+
+                    Então uma voz surge dos alto-falantes:
+
+                    "Se você está ouvindo isso...
+                    a estação já deveria estar morta."
+                </p>
+
+                <div id="escolhas" class="choices">
+
+                    <button onclick="escolher(1)">
+                         Entrar na porta azul
+                    </button>
+
+                    <button onclick="escolher(2)">
+                         Investigar na porta escura
+                    </button>
+
+                    <button onclick="escolher(3)">
+                         Investigar porta Investigar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <span id="progresso">Decisão 1 de ?</span>
+
+            <button
+                class="restart"
+                onclick="reiniciar()">
+                ↻ Reiniciar aventura
+            </button>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
